@@ -743,7 +743,7 @@ body {
   margin: 30px 120px;
   background-color: var(--brand-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: var(--border-radius-default);
+  border-radius: 4px;
   color: var(--brand-color-white);
   font-weight: 700;
   font-size: 16px;
