@@ -481,7 +481,8 @@ body {
   padding-top: 12px;
 }
 
-.join-us p {
+.join-us p,
+.newsletter p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.21;
@@ -515,7 +516,7 @@ body {
 .join-us-list a {
   fill: var(--brand-color-white);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 
 .join-us-list a:hover,
 .join-us-list a:focus {
@@ -679,18 +680,18 @@ body {
 }
 
 .modal-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 12px;
   text-align: center;
-    line-height: 1.15;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--brand-color-black);
+  margin-top: 40px;
 }
 
-.modal-close-icon {
-    transition-property: transform fill;
+.modal-label:hover .modal-icon {
+  fill: var(--brand-color-blue);
 }
 
 .modal-label {
@@ -698,15 +699,124 @@ body {
   position: relative;
   font-size: 12px;
   margin-bottom: 10px;
-  color: var(--brand-color-gray);
+  margin-left: 40px;
+  margin-right: 40px;
+  color: var(--brand-color-gray2);
 }
 
 .modal-icon {
   position: absolute;
+  left: 15px;
+  top: 32px;
 }
 
+.modal-label .modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 40px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid var(--brand-color-blue);
+  outline: none;
+}
+
+.modal-textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-btn {
+  padding: 10px 76px;
+  margin: 40px 164px;
+  background-color: var(--brand-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--brand-color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-checkbox {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--brand-color-gray2);
+}
+
+.modal-link {
+  color: var(--brand-color-blue);
+}
 
 /* NEWSLETTER */
 .newsletter {
   margin-left: 78px;
+  padding-top: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.newsletter-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: var(--brand-color-white);
+  border-radius: 4px;
+  padding: 15px 16px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border: 1px solid var(--brand-color-blue);
+  outline: none;
+}
+
+.newsletter-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color-blue);
+  color: var(--brand-color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.newsletter svg {
+  fill: var(--brand-color-white)
 }
