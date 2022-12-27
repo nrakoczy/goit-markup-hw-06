@@ -822,9 +822,8 @@ body {
 
 .modal-checkbox svg {
   position: absolute;
-  top: 5px;
-  left: 1px;
-  background: var(--white-color);
+  top: 3px;
+  left:-3px;
   fill: var(--brand-color-white);
   background-color: var(--brand-color-blue);
   border-radius: 2px;
@@ -833,4 +832,8 @@ body {
 
 .modal-checkbox a {
   color: var(--brand-color-blue);
+}
+
+.modal-checkbox input:checked + svg {
+  opacity: 1;
 }
