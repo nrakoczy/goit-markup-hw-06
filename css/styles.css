@@ -698,7 +698,7 @@ body {
   position: relative;
   font-size: 12px;
   margin-bottom: 10px;
-  color: var(--brand-color-grey);
+  color: var(--brand-color-gray);
 }
 
 .modal-icon {
