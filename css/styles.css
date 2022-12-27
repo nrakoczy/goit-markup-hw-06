@@ -820,13 +820,13 @@ body {
   color: var(--brand-color-gray2);
 }
 
-.modal-checkbox svg {
+.checkbox-icon {
   position: absolute;
   top: 3px;
   left:-3px;
   fill: var(--brand-color-white);
   background-color: var(--brand-color-blue);
-  border-radius: 2px;
+   border-radius: 2px;
   opacity: 0;
 }
 
@@ -834,6 +834,6 @@ body {
   color: var(--brand-color-blue);
 }
 
-.modal-checkbox input:checked + svg {
+.modal-checkbox input:checked + .checkbox-icon {
   opacity: 1;
 }
