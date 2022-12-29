@@ -831,13 +831,6 @@ body {
   width: 16px;
   height: 15px;
   opacity: 1;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-checkbox-input:hover,
-.modal-checkbox-input:focus {
-  border: 2px solid var(--brand-color-blue);
-  outline: none;
 }
 
 .modal-checkbox-input:checked + .checkbox-icon {
