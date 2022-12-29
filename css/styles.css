@@ -754,13 +754,9 @@ body {
   top: 32px;
 }
 
-.modal-label input .modal-icon {
+.modal-imput .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .modal-label input:is(:hover, :focus) + .modal-icon {
-  fill: var(--brand-color-blue);
-} */
 
 .modal-input {
   display: block;
@@ -829,7 +825,7 @@ body {
   position: relative;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--brand-color-gray2);
+  border: 2px solid var(--brand-color-black);
   border-radius: 2px;
 }
 
