@@ -787,6 +787,11 @@ body {
   color: var(--brand-color-black);
 }
 
+
+.modal-textarea::placeholder {
+color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-btn {
   padding: 10px 76px;
   margin: 30px 164px 40px;
